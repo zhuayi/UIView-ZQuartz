@@ -10,12 +10,11 @@
 Pod::Spec.new do |s|
   s.name             = "UIView-ZQuartz"
   s.version          = "0.1.0"
-  s.summary          = "drawRect绘制扩展, 提供矩形,圆角矩形,圆,扇形,曲线,折线,弧线等."
+  s.summary          = "二维绘图引擎ZQuartz 提供矩形,圆角矩形,圆,扇形,曲线,折线,弧线等."
   s.description      = <<-DESC
                        drawRect绘制扩展, 提供矩形,圆角矩形,圆,扇形,曲线,折线,弧线等.
                        DESC
   s.homepage         = "https://github.com/zhuayi/UIView-ZQuartz.git"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "zhuayi" => "2179942@qq.com" }
   s.source           = { :git => "https://github.com/zhuayi/UIView-ZQuartz.git", :tag => s.version.to_s }
