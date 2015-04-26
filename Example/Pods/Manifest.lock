@@ -1,0 +1,14 @@
+PODS:
+  - UIView-ZQuartz (0.1.0)
+
+DEPENDENCIES:
+  - UIView-ZQuartz (from `../`)
+
+EXTERNAL SOURCES:
+  UIView-ZQuartz:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UIView-ZQuartz: f0f67ce7f1494e99c533bc0e67ea136f6ed1aa28
+
+COCOAPODS: 0.37.0.beta.1

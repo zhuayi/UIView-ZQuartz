@@ -10,18 +10,15 @@
 Pod::Spec.new do |s|
   s.name             = "UIView-ZQuartz"
   s.version          = "0.1.0"
-  s.summary          = "A short description of UIView-ZQuartz."
+  s.summary          = "drawRect绘制扩展, 提供矩形,圆角矩形,圆,扇形,曲线,折线,弧线等."
   s.description      = <<-DESC
-                       An optional longer description of UIView-ZQuartz
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       drawRect绘制扩展, 提供矩形,圆角矩形,圆,扇形,曲线,折线,弧线等.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/UIView-ZQuartz"
+  s.homepage         = "https://github.com/zhuayi/UIView-ZQuartz.git"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "zhuayi" => "2179942@qq.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/UIView-ZQuartz.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/zhuayi/UIView-ZQuartz.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
