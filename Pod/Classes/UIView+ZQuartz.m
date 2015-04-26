@@ -13,6 +13,28 @@
 
 @implementation UIView (ZQuartz)
 
+/**
+ *  绘制图片
+ */
+- (void)drawImage:(CGRect)rect image:(UIImage *)image {
+    CGContextRef     context = UIGraphicsGetCurrentContext();
+    CGContextDrawImage(context, rect,  image.CGImage);
+}
+
+
+/**
+ *  绘制文字
+ *
+ *  @param point     文字坐标
+ *  @param text      文字内容
+ *  @param fontStyle 文字样式
+ */
+- (void)drawText:(CGPoint)point text:(NSString *)text fontSize:(NSDictionary *)fontStyle
+{
+    // 兼容不同长度的字符串
+    [text drawAtPoint:point withAttributes:fontStyle];
+}
+
 
 /**
  *  绘制带边框线的矩形

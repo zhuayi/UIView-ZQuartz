@@ -10,6 +10,20 @@
 
 @interface UIView (ZQuartz)
 
+/**
+ *  绘制图片
+ */
+- (void)drawImage:(CGRect)rect image:(UIImage *)image;
+
+
+/**
+ *  绘制文字
+ *
+ *  @param point     文字坐标
+ *  @param text      文字内容
+ *  @param fontStyle 文字样式
+ */
+- (void)drawText:(CGPoint)point text:(NSString *)text fontSize:(NSDictionary *)fontStyle;
 
 /**
  *  绘制带边框线的矩形
