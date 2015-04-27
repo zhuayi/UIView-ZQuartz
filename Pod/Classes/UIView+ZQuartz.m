@@ -48,12 +48,10 @@
     CGContextSetStrokeColorWithColor(context, color.CGColor);//线框颜色
     CGContextSetLineWidth(context, lineWidth);
     
-    CGMutablePathRef pathRef = [self pathwithFrame:rect withRadius:0];
-    
-    CGContextAddPath(context, pathRef);
-    CGContextDrawPath(context,kCGPathFillStroke);
-    
-    CGPathRelease(pathRef);
+    //添加矩形对象
+    CGContextAddRect(context,rect);
+    //绘制
+    CGContextDrawPath(context, kCGPathFillStroke);
 }
 
 /**
@@ -63,13 +61,10 @@
  */
 -(void)drawRectangle:(CGRect)rect {
     CGContextRef     context = UIGraphicsGetCurrentContext();
-
-    CGMutablePathRef pathRef = [self pathwithFrame:rect withRadius:0];
-        
-    CGContextAddPath(context, pathRef);
-    CGContextDrawPath(context,kCGPathFillStroke);
-
-    CGPathRelease(pathRef);
+    //添加矩形对象
+    CGContextAddRect(context,rect);
+    //绘制
+    CGContextDrawPath(context, kCGPathFillStroke);
 }
 
 /**
@@ -125,7 +120,7 @@
 -(void)drawCircleWithCenter:(CGPoint)center radius:(float)radius {
     CGContextRef     context = UIGraphicsGetCurrentContext();
     CGMutablePathRef pathRef = CGPathCreateMutable();
-
+    
     CGPathAddArc(pathRef,
                  &CGAffineTransformIdentity,
                  center.x,
@@ -140,7 +135,7 @@
     CGContextDrawPath(context,kCGPathFillStroke);
     
     CGPathRelease(pathRef);
-
+    
 }
 
 
@@ -186,7 +181,7 @@
                 endAngle:(float)endAngle
                clockwise:(BOOL)clockwise {
     CGContextRef context = UIGraphicsGetCurrentContext();
-
+    
     CGContextAddArc(context,
                     center.x,
                     center.y,
@@ -262,10 +257,10 @@
     
     for(int i = 1;i<pointArray.count;i++)
     {
-         NSAssert([[pointArray[i] class] isSubclassOfClass:[NSValue class]], @"数组成员必须是CGPoint组成的NSValue");
-         NSValue *pointValue = pointArray[i];
-         CGPoint  point      = [pointValue CGPointValue];
-         CGContextAddLineToPoint(context, point.x,point.y);
+        NSAssert([[pointArray[i] class] isSubclassOfClass:[NSValue class]], @"数组成员必须是CGPoint组成的NSValue");
+        NSValue *pointValue = pointArray[i];
+        CGPoint  point      = [pointValue CGPointValue];
+        CGContextAddLineToPoint(context, point.x,point.y);
     }
     
     CGContextStrokePath(context);

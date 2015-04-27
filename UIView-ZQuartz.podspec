@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "UIView-ZQuartz"
-  s.version          = "0.2.0"
+  s.version          = "0.3.0"
   s.summary          = "二维绘图引擎ZQuartz 提供矩形,圆角矩形,圆,扇形,曲线,折线,弧线等."
   s.description      = <<-DESC
                        drawRect绘制扩展, 提供矩形,圆角矩形,圆,扇形,曲线,折线,弧线等.
