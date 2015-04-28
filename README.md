@@ -25,7 +25,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ```
 
 绘制矩形
-```
+```objective-c
 - (void)drawRectangle:(CGRect)rect
 ```
 
@@ -36,13 +36,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ```
 
 绘制画多边形
-```
+```objective-c
 - (void)drawPolygon:(NSArray *)pointArray
 ```
 
 绘制圆形
 
-``````objective-c
+```bjective-c
 - (void)drawCircleWithCenter:(CGPoint)center radius:(float)radius
 ```
 
