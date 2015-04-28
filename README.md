@@ -26,30 +26,30 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 绘制矩形
 ```
--(void)drawRectangle:(CGRect)rect
+- (void)drawRectangle:(CGRect)rect
 ```
 
 绘制圆角矩形
 
 ```objective-c
--(void)drawRectangle:(CGRect)rect withRadius:(float)radius;
+- (void)drawRectangle:(CGRect)rect withRadius:(float)radius;
 ```
 
 绘制画多边形
 ```
--(void)drawPolygon:(NSArray *)pointArray
+- (void)drawPolygon:(NSArray *)pointArray
 ```
 
 绘制圆形
 
 ``````objective-c
--(void)drawCircleWithCenter:(CGPoint)center radius:(float)radius
+- (void)drawCircleWithCenter:(CGPoint)center radius:(float)radius
 ```
 
 绘制曲线
 
 ```objective-c
--(void)drawCurveFrom:(CGPoint)startPoint
+- (void)drawCurveFrom:(CGPoint)startPoint
 to:(CGPoint)endPoint
 controlPoint1:(CGPoint)controlPoint1
 controlPoint2:(CGPoint)controlPoint2;
@@ -59,7 +59,7 @@ controlPoint2:(CGPoint)controlPoint2;
 绘制弧线
 
 ```objective-c
--(void)drawArcFromCenter:(CGPoint)center
+- (void)drawArcFromCenter:(CGPoint)center
 radius:(float)radius
 startAngle:(float)startAngle
 endAngle:(float)endAngle
@@ -69,7 +69,7 @@ clockwise:(BOOL)clockwise;
 绘制扇形
 
 ```objective-c
--(void)drawSectorFromCenter:(CGPoint)center
+- (void)drawSectorFromCenter:(CGPoint)center
 radius:(float)radius
 startAngle:(float)startAngle
 endAngle:(float)endAngle
@@ -79,13 +79,13 @@ clockwise:(BOOL)clockwise
 绘制直线
 
 ```objective-c
--(void)drawLineFrom:(CGPoint)startPoint to:(CGPoint)endPoint
+- (void)drawLineFrom:(CGPoint)startPoint to:(CGPoint)endPoint
 ```
 
 绘制折线 ，连续直线
 
 ```objective-c
--(void)drawLines:(NSArray *)pointArray;
+- (void)drawLines:(NSArray *)pointArray;
 ```
 
 
@@ -95,9 +95,9 @@ UIView-ZQuartz is available through [CocoaPods](http://cocoapods.org). To instal
 it, simply add the following line to your Podfile:
 
 ```ruby
-`pod "UIView-ZQuartz"
+pod "UIView-ZQuartz"
 ```
-`
+
 ## Author
 
 renxin, renxin@baidu.com
