@@ -50,9 +50,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ```objective-c
 - (void)drawCurveFrom:(CGPoint)startPoint
-to:(CGPoint)endPoint
-controlPoint1:(CGPoint)controlPoint1
-controlPoint2:(CGPoint)controlPoint2;
+                   to:(CGPoint)endPoint
+        controlPoint1:(CGPoint)controlPoint1
+        controlPoint2:(CGPoint)controlPoint2;
 ```
 
 
@@ -60,20 +60,20 @@ controlPoint2:(CGPoint)controlPoint2;
 
 ```objective-c
 - (void)drawArcFromCenter:(CGPoint)center
-radius:(float)radius
-startAngle:(float)startAngle
-endAngle:(float)endAngle
-clockwise:(BOOL)clockwise;
+                   radius:(float)radius
+               startAngle:(float)startAngle
+                 endAngle:(float)endAngle
+                clockwise:(BOOL)clockwise;
 ```
 
 绘制扇形
 
 ```objective-c
 - (void)drawSectorFromCenter:(CGPoint)center
-radius:(float)radius
-startAngle:(float)startAngle
-endAngle:(float)endAngle
-clockwise:(BOOL)clockwise
+                      radius:(float)radius
+                  startAngle:(float)startAngle
+                    endAngle:(float)endAngle
+                   clockwise:(BOOL)clockwise
 ```
 
 绘制直线
