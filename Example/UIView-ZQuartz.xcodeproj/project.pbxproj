@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380346A41B0AEF6700E469C1 /* UIImage+ZQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 380346A31B0AEF6700E469C1 /* UIImage+ZQuartz.m */; };
 		3826A6AE1AECA5900014E160 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 3826A6AB1AECA5900014E160 /* .gitkeep */; };
 		3826A6AF1AECA5900014E160 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 3826A6AD1AECA5900014E160 /* .gitkeep */; };
 		3826A6B21AECA59B0014E160 /* UIView+ZQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 3826A6B11AECA59B0014E160 /* UIView+ZQuartz.m */; };
@@ -42,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		1E25D2C85D52EC7D77EF41BF /* UIView-ZQuartz.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "UIView-ZQuartz.podspec"; path = "../UIView-ZQuartz.podspec"; sourceTree = "<group>"; };
+		380346A21B0AEF6700E469C1 /* UIImage+ZQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZQuartz.h"; sourceTree = "<group>"; };
+		380346A31B0AEF6700E469C1 /* UIImage+ZQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZQuartz.m"; sourceTree = "<group>"; };
 		3826A6AB1AECA5900014E160 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		3826A6AD1AECA5900014E160 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		3826A6B01AECA59B0014E160 /* UIView+ZQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZQuartz.h"; sourceTree = "<group>"; };
@@ -129,6 +132,8 @@
 				3826A6B01AECA59B0014E160 /* UIView+ZQuartz.h */,
 				3826A6B11AECA59B0014E160 /* UIView+ZQuartz.m */,
 				3826A6AD1AECA5900014E160 /* .gitkeep */,
+				380346A21B0AEF6700E469C1 /* UIImage+ZQuartz.h */,
+				380346A31B0AEF6700E469C1 /* UIImage+ZQuartz.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				3826A6B51AECA5BB0014E160 /* ZRectangle.m in Sources */,
 				3826A6B21AECA59B0014E160 /* UIView+ZQuartz.m in Sources */,
 				6003F59E195388D20070C39A /* ZAppDelegate.m in Sources */,
+				380346A41B0AEF6700E469C1 /* UIImage+ZQuartz.m in Sources */,
 				6003F5A7195388D20070C39A /* ZViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
